@@ -44,4 +44,5 @@ func (r *router) TaskRoute() {
 	}))
 
 	route.Post("/create", todolists.CreateTask)
+	route.Get("/levelPriority", todolists.GetLevelsPriority)
 }
